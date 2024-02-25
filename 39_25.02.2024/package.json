@@ -1,0 +1,1 @@
+{"name":"39_25.02.2024","version":"1.0.0","description":"","main":"main.js","scripts":{"setup":"npm i dotenv && npm i nodemon","main":"node --watch main.js","nodemon":"nodemon main.js"},"keywords":[],"author":"","license":"ISC","dependencies":{"dotenv":"^16.4.5","nodemon":"^3.1.0"}}
