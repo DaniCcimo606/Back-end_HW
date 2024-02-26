@@ -7,14 +7,11 @@ const { Readable, Writable, Transform } = require('node:stream');
 const readline = require('node:readline');
 const http = require('node:http');
 
-const rndmTime = Math.floor(Math.random() * 3 + 1) * 1000;
-const failStatus = Math.floor(Math.random() * 100 + 1);
-const status = failStatus <= 10 ? 500 : 200;
-console.log(rndmTime);
-console.log(status);
-
 const server = http.createServer();
 server.on('request', (req, res) => {
+    const rndmTime = Math.floor(Math.random() * 3 + 1) * 1000;
+    const failStatus = Math.floor(Math.random() * 100 + 1);
+    const status = failStatus <= 10 ? 500 : 200;
     setTimeout(() => {
         res.writeHead(status, { 'content-type': 'text/html' });
         res.end();
