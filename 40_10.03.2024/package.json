@@ -1,0 +1,1 @@
+{"name":"40_10.03.2024","version":"1.0.0","description":"","main":"main.js","scripts":{"setup":"npm i dotenv && npm i express && npm i @faker-js/faker --save-dev && npm i pug","main":"node --watch main.js"},"keywords":[],"author":"","license":"ISC","dependencies":{"dotenv":"^16.4.5","express":"^4.18.3","pug":"^3.0.2"},"devDependencies":{"@faker-js/faker":"^8.4.1"}}
